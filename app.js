@@ -1,4 +1,4 @@
-// // Домашнее задание (Основное, полифил в конце)
+// Домашнее задание (Основное, полифил в конце)
 
 function multiTasks() {
   setTimeout(() => {
@@ -92,31 +92,31 @@ function createComponents() {
 createComponents();
 multiTasks();
 
-// //----------------------------------------
+//----------------------------------------
 
-// // Кастомный Map
+// Кастомный Map
 
-// Array.prototype.customMap = function (func) {
-//   const newArr = [];
+Array.prototype.customMap = function (func) {
+  const newArr = [];
 
-//   for (let index = 0; index < this.length; index++) {
-//     newArr.push(func(this[index], index, this));
-//   }
+  for (let index = 0; index < this.length; index++) {
+    newArr.push(func(this[index], index, this));
+  }
 
-//   return newArr;
-// };
+  return newArr;
+};
 
-// const arr1 = [1, 2, 3, 4, 5];
-// const arr2 = arr1.customMap((item, index, arr) => {
-//   if (arr[index + 1]) return item + arr[index + 1];
-//   return item;
-// });
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = arr1.customMap((item, index, arr) => {
+  if (arr[index + 1]) return item + arr[index + 1];
+  return item;
+});
 
-// console.log(`(Доп задание) arr => ${arr1}, newArr after customMap => ${arr2}`);
+console.log(`(Доп задание) arr => ${arr1}, newArr after customMap => ${arr2}`);
 
 // ---------------------
 
-// Вариант домашнего задания(упрощенный)
+// // Вариант домашнего задания(упрощенный)
 
 // function simpleTasks() {
 //   setTimeout(() => {
